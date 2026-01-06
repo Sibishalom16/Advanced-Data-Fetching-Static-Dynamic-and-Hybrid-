@@ -30,4 +30,4 @@ The change in seconds is due to the timestamp display, not because ISR runs on e
 
 ### Reflection
 If the application scaled to 10x more users, using SSR everywhere would increase server cost.
-Using Static and Hybrid rendering would improve scalability, reduce load, and enhance performance.
+Using Static and Hybrid rendering would improve scalability, reduce load, and enhance performance..

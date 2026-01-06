@@ -2,13 +2,16 @@
   "name": "render-app",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
+"scripts": {
+  "dev": "next dev",
+  "build:dev": "next build",
+  "build:staging": "cross-env NODE_ENV=staging next build",
+  "build:production": "cross-env NODE_ENV=production next build",
+  "start": "next start"
+},
+
   "dependencies": {
+    "cross-env": "^10.1.0",
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3"

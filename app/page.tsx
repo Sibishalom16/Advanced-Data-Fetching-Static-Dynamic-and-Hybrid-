@@ -4,8 +4,8 @@ export default function Home() {
       <h1>Next.js Rendering Modes Demo</h1>
 
       <p>
-        This application demonstrates Static Rendering (SSG),
-        Dynamic Rendering (SSR), and Hybrid Rendering (ISR)
+        This application demonstrates <b>Static Rendering (SSG)</b>,{" "}
+        <b>Dynamic Rendering (SSR)</b>, and <b>Hybrid Rendering (ISR)</b>{" "}
         using the Next.js App Router.
       </p>
 
@@ -27,9 +27,28 @@ export default function Home() {
 
       <hr />
 
+      <h2>Environment Information (Concept-2)</h2>
+
+      <p>
+        <b>Environment:</b>{" "}
+        {process.env.ENV_NAME ?? "Not defined"}
+      </p>
+
+      <p>
+        <b>API URL:</b>{" "}
+        {process.env.NEXT_PUBLIC_API_URL ?? "Not defined"}
+      </p>
+
+      <hr />
+
       <p>
         Each page uses a different rendering strategy to improve
         performance, scalability, and user experience.
+      </p>
+
+      <p>
+        Environment-aware builds ensure the same application behaves
+        correctly across development, staging, and production.
       </p>
     </main>
   );
